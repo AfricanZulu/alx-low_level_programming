@@ -1,12 +1,7 @@
-#include "main.h"
+#ifndef MAIN_H
+#define MAIN_H
 
-/**
- * main - check the code.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    print_alphabet_x10();
-    return (0);
-}
+void positive_or_negative(int i);
+int largest_number(int a, int b, int c);
+
+#endif /* MAIN_H */
