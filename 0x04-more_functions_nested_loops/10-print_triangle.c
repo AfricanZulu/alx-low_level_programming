@@ -23,7 +23,7 @@ void print_triangle(int size)
 
 int main()
 {
-    int size = 5; // You can change the size as needed
+    int size = 5;
     print_triangle(size);
     return 0;
 }
