@@ -1,26 +1,26 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * _strncat - to return concatnated string
- * @dest: firsts string parameter
- * @src: second string parameter
- * @n: number of bytes to be used
- * Return: real_dest
+ * _strncat - a function that concertenate two strings
+ *
+ * @dest: destination string
+ * @src: source string
+ * @n: no of element to concertenate from src
+ * Return: dest + n of src
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	char *real_dest = dest;
+	int len_dest, i;
 
-	while (*dest != '\0')
+	for (len_dest = 0; dest[len_dest] != '\0'; len_dest++)
 	{
-		dest++;
+
 	}
-	while (*src != '\0' && n > 0)
+
+	for (i = 0; src[i] != 0 && i < n; i++)
 	{
-		*dest = *src;
-		dest++;
-		src++;
-		n--;
+		dest[len_dest + i] = src[i];
 	}
-	*dest = '\0';
-	return (real_dest);
+
+
+	return (dest);
 }

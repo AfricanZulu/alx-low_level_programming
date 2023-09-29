@@ -1,24 +1,29 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * _strcat - function to return two strings
- * @dest: first string to be appended
- * @src: second string to be appended
- * Return: dest to be retrned
+ * _strcat - concertenate two strings
+ *
+ * @dest: the destination string
+ * @src: the source string
+ *
+ * Return: destination string (char *ptr)
  */
 char *_strcat(char *dest, char *src)
 {
-	char *real_dest = dest;
+	int len1, len2, i;
 
-	while (*dest != '\0')
+	for (len1 = 0; dest[len1] != '\0'; len1++)
 	{
-		dest++;
+
 	}
-	while (*src != '\0')
+
+	for (len2 = 0; src[len2] != '\0'; len2++)
 	{
-		*dest = *src;
-		dest++;
-		src++;
+
 	}
-	*dest = '\0';
-	return (real_dest);
+	for (i = 0; i <= len2; i++)
+	{
+		dest[len1 + i] = src[i];
+	}
+
+	return (dest);
 }

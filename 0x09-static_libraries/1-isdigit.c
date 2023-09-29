@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * _isdigit - checks a number is digit
- * @c: parameter of digit
- * Return: 1 if true 0 if false
+ * _isdigit - check if parameter is a digit or character
+ *
+ * @c: parameter
+ * Return: 1 if its a number and 0 otherwise
  */
 int _isdigit(int c)
 {

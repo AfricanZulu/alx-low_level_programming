@@ -1,12 +1,28 @@
 #include "main.h"
 /**
- * _isalpha - checks if alphabet is in caps
- * @c: input to be checked
- * Return: returns 0 if success
+ * _isalpha - return 1 when c is cap or low
+ *
+ * Description: we are using _putchar
+ *
+ * @c: collect the character
+ *
+ * Return: 1 if c is low or cap otherwise 0
  */
 int _isalpha(int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	return (0);
+	char lower, upper;
+	int letter = 0;
+
+	for (lower = 'a'; lower <= 'z'; lower++)
+	{
+		for (upper = 'A'; upper <= 'Z'; upper++)
+		{
+			if (lower == c || upper == c)
+			{
+				letter = 1;
+			}
+
+		}
+	}
+	return (letter);
 }

@@ -1,26 +1,19 @@
-#include <stdio.h>
+#include "main.h"
 /**
- * _strchr - checks for c
- * @s: string to be checked
- * @c: character looked for
- * Return: pointer of c
+ * _strchr - main file
+ * @s: input
+ * @c: input
+ * Return: 0
  */
 char *_strchr(char *s, char c)
 {
-	while (*s)
+	while (*s >= '\0')
 	{
-		if (*s != c)
-		{
-			s++;
-		}
-		else
+		if (*s == c)
 		{
 			return (s);
 		}
+		s++;
 	}
-	if (c == '\0')
-	{
-		return (s);
-	}
-	return (NULL);
+	return (0);
 }
